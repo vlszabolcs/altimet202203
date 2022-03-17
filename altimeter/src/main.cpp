@@ -50,24 +50,26 @@ void setup() {
 
 void loop() {
 
-  //gps_data();
- gps_nmea_read();
+  gps_data();
+  //gps_nmea_read();
 
-  //bmp280_data();
+  bmp280_data();
 
-  /*if(millis() > time_now + period){
+  if(millis() > time_now + period){
     time_now = millis();
 
-    //gps_data_write();
-    //bmp280_write();
+    Serial.println();
+    
+    
 
     if(creat_file_name()){
+      Serial.println(head);
       logging_csv();
     }
     else{
-      Serial.println("Not logging");
+      Serial.println("don't logging");
     }
-  }*/
+  }
 
 }
 
