@@ -1,5 +1,7 @@
 #include <Arduino.h>
+#include <HardwareSerial.h>
 #include <SD.h>
+
 
 #include <gps_function.h>
 #include <bmp280_function.h>

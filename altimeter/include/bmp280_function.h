@@ -1,4 +1,6 @@
 #include <Adafruit_BMP280.h>
+#include <Wire.h>
+
 Adafruit_BMP280 bmp;
 
 float pres;
