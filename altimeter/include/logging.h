@@ -1,4 +1,4 @@
-String head = "Time,Latitude,Longitude,GPSAltitude,Speed,Pressure,Temperature,Altitude";
+String head = "time,latitude,longitude,gpsAltitude,speed,pressure,temperature,altitude";
 String message;
 String path;
 File file;
@@ -31,9 +31,9 @@ bool creat_file_name(){
       
        if(gps.date.isValid() && gps.time.isValid()){ 
         
-            if (creat_directory(String(gpsDate))){
+            if (creat_directory(gpsDtime)){
 
-                path ="/"+String(gpsDate)+ "/" + String(gpsDate)+"_"+String(gpsTime) + ".csv";
+                path ="/" + gpsDtime + ".csv";
                 
                 Serial.println(path);
 
